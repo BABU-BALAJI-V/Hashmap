@@ -16,3 +16,32 @@ m.insert(pair2);
 //insert 3
 
 m["balaji"] = 2;
+
+//search
+
+cout<<m["balaji"]<<endl;
+cout<<m.at("balaji")<<endl;
+
+//to check presence
+
+cout<<m.count("balaji");
+
+//erase
+
+cout<<m.erase("balaji");
+
+//traverse
+
+for(auto i:m)
+{
+    cout<<i.first<<" "<<i.second;
+}
+
+//iterator
+
+unordered_map<string,int> :: iterator it=m.begin();
+while(it!=m.end())
+{
+    cout<<it->first<<" "<<it->second<<endl;
+    it++;
+}
