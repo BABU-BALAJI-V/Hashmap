@@ -1,0 +1,18 @@
+//types
+
+-> map<int,int> m;
+-> unordered_map<string,int> m;
+
+//inserting 1
+
+pair<string,int> p=make_pair("balaji",2);
+m.insert(p);
+
+//inserting 2
+
+pair<string,int> pair2("balaji",2);
+m.insert(pair2);
+
+//insert 3
+
+m["balaji"] = 2;
